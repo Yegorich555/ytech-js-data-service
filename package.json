@@ -1,0 +1,47 @@
+{
+    "name": "ytech-js-data-service",
+    "version": "0.0.1",
+    "description": "Data-service for wrapping http (ajax) requests, logging to console and storing, caching data",
+    "main": "index.js",
+    "scripts": {
+        "example": "webpack-dev-server --hot --open --watch --mode development",
+        "build-tsc": "tsc",
+        "test": "nyc --reporter=html --reporter=text --reporter=lcov mocha",
+        "coverage": "nyc report --reporter=text-lcov | coveralls"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Yegorich555/ytech-js-data-service.git"
+    },
+    "keywords": [
+        "js",
+        "data",
+        "service",
+        "js-data-service",
+        "cache",
+        "storage",
+        "http",
+        "ajax",
+        "promise"
+    ],
+    "author": "Yegorich555",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Yegorich555/ytech-js-data-service/issues"
+    },
+    "homepage": "https://github.com/Yegorich555/ytech-js-data-service#readme",
+    "files": [
+        "index.js",
+        "lib/*"
+    ],
+    "devDependencies": {
+        "ts-loader": "^5.3.0",
+        "typescript": "^3.1.5",
+        "webpack": "^4.23.1",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.10"
+    },
+    "dependencies": {
+        "html-webpack-plugin": "^3.2.0"
+    }
+}
