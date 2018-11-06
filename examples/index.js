@@ -8,9 +8,6 @@ let gloOptions = new DataServiceOptions();
 //gloOptions.httpPost = (url, data, config) => {}
 //gloOptions.httpPut = (url, data, config) => {}
 
-DataService.options = gloOptions;
-
-
 let options = new RequestOptions();
 options.storeKey = 'user';
 options.store = (data, _response, _storage, _storedValue) => data;
@@ -25,5 +22,4 @@ export const delCurrentUser = () => //del
         storeKey: 'user',
         store: _ => undefined // storeVal.id = 0;
     });
-
-getCurrentUser();
+getCurrentUser().then(getCurrentUser)
